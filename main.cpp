@@ -2,15 +2,11 @@
 
 int main()
 {
-    int a =8;
-    int b=3;
-    int c=a-b;
-    
-    std::cout<<(a>b)<<"/t";
-    std::cout<<(c<a)<<"/t";
-    std::cout<<(a!=b)<<"/t";
-    std::cout<<(a==b)<<"/t";
-    std::cout<<(a>=b)<<"/t";
-
+    int sum = 0;
+    for (int i = 1; i < 6; i++) {
+        std::cout << "現在的i值是: " << i << "\n";
+        sum = sum + i;
+    }
+    std::cout << "1+..+5總和是: " << sum << "\n";
     return 0;
 }
